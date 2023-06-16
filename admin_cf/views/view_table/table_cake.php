@@ -45,7 +45,7 @@ if (isset($_POST['button_add'])) {
                         $product_desc = $product['product_desc'];
                         $product_price = $product['product_price'];
 
-                        // search product to table
+                        // search product
                         if (isset($_POST['search'])) {
                             if (empty($_POST['product_name'])) {
                                 echo '<td colspan="6"><h1>Bạn chưa nhập tên sản phẩm!</h1></td>';

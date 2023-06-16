@@ -43,8 +43,7 @@ require dir_admin . '/models/product.php';
                         </thead>
                         <tbody class="text-center">
                             <?php
-                            // $total = 0;
-                            if (isset($_SESSION['cart'])) {
+                            if (!empty($_SESSION['cart'])) {
                                 foreach ($_SESSION['cart'] as $key => $value) {
                                     echo '
                                     <tr>
@@ -63,7 +62,7 @@ require dir_admin . '/models/product.php';
                                     ';
                                 }
                             } else {
-                                echo '<td colspan="4"><h1 class="text-center" col=4>Không có sản phẩm nào!</h1></td>';
+                                echo '<td colspan="5"><h1 class="text-center" col=4>Giỏ hàng trống!</h1></td>';
                             }
                             ?>
                         </tbody>
@@ -78,14 +77,21 @@ require dir_admin . '/models/product.php';
                         <form action="payment.php" method="POST" id="paymentForm">
                             <input type="hidden" name="iquantity" id="iquantityInput">
                             <input type="hidden" name="gtotal" id="gtotalInput">
-                            <button type="submit" class="btn btn-primary btn-block col-lg-12">Thanh toán</button>
+
+                            <?php if (!empty($_SESSION['cart'])) { ?>
+                                <button type="submit" class="btn btn-primary btn-block col-lg-12">Thanh toán</button>
+                            <?php } else { ?>
+                                <button type="submit" class="btn btn-primary btn-block col-lg-12" disabled>Thanh toán</button>
+                            <?php } ?>
+
                         </form>
                     </div>
-
                 </div>
             </div>
-        </div>
     </main>
+    </div>
+
+    <!-- code javascript -->
     <script>
         var gt = 0;
         var iprice = document.getElementsByClassName('iprice');

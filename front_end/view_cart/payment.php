@@ -42,7 +42,7 @@ if (isset($_SESSION['cart'])) {
                                         $product['quantity'] = $iquantityArray[$key];
                                     }
                                 }
-                            
+
                                 $total += ($product['price'] * $product['quantity']);
                                 echo '                            
                                 <li class="list-group-item d-flex justify-content-between lh-sm">
@@ -65,9 +65,9 @@ if (isset($_SESSION['cart'])) {
                     </ul>
 
                     <hr class="my-4">
-                    <h4 class="mb-3"></h4> 
+                    <h4 class="mb-3"></h4>
                     <!-- Phần chứa hình thức thanh toán -->
-                    
+
                     <hr class="my-4">
 
                 </div>
@@ -112,7 +112,7 @@ if (isset($_SESSION['cart'])) {
                         <div class="col-12">
                             <button class="w-100 btn btn-primary btn-lg" type="submit" name="submit_payment">Tiến hành thanh toán</button>
                         </div>
-                        <br><br>
+
                     </form>
                 </div>
             </div>

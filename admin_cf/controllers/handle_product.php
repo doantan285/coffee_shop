@@ -47,7 +47,7 @@ class handleProduct {
     }
 }
 // add product
-if (isset($_POST['add_product'])) {// initialize object
+if (isset($_POST['add_product'])) {
     $product = new Product();
 
     // receive data from form add
