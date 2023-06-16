@@ -1,0 +1,40 @@
+.wrapper_revenue {
+    height: 100%;
+    padding: 36px 24px 0 24px;
+    overflow-x: hidden;
+}
+
+.form_revenue {
+    height: 100%;
+}
+
+.form_revenue-heading {
+    display: flex;
+    margin-bottom: 33px;
+}
+
+.form_revenue-heading .search_revenue input {
+    padding: 12px;
+}
+
+.form_revenue-heading h1 {
+    margin-left: 12vw;
+    color: var(--color-begie);
+}
+
+.form_revenue-body {
+    height: 100%;
+    width: 100%;
+}
+
+.form_revenue-body table {
+    text-align: center;
+    width: 100%;
+}
+
+.form_revenue-body table th,
+.form_revenue-body table td {
+    padding: 8px 0;
+}
+
+

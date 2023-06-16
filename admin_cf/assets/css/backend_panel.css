@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color-black: #000;
+    --color-grey: #4b4947;
+    --color-begie: #D3AD7F;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* side header */
+.side-header {
+    position: fixed;
+    background: var(--color-black);
+    color: var(--color-begie);
+    height: 12vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.header_brand-img img {
+    position: absolute;
+    height: 130%;
+    top: 4vh;
+    left: 3.5vw;
+}
+
+.header_user {
+    position: absolute;
+    top: 4vh;
+    right: 36vw;
+}
+
+.btn-logout {
+    position: absolute;
+    right: 3vw;
+    top: 4vh;
+    font-size: 28px;
+    
+}
+
+.btn-logout a {
+    color: var(--color-begie);
+}
+
+/* side body */
+.side-body {
+    position: absolute;
+    margin-top: 12vh;
+    height: 88vh;
+    width: 100%;
+}
+.side-navbar {
+    position: fixed;
+    bottom: 0;
+    background: var(--color-black);
+    height: 100%;
+    width: 14vw;
+    display: flex;
+    align-items: center;
+}
+
+.side-navbar ul {
+    width: 100%;
+    margin-top: 64px;
+}
+.side-navbar button { 
+    width: 100%;
+    padding: 28px;
+    font-size: 20px;
+    color: var(--color-begie);
+    background: var(--color-black);
+}
+
+.side-navbar button:hover {
+    cursor: pointer;
+    color: #000;
+    background: var(--color-begie);
+}
+
+.side-content {
+    width: calc(100% - 14vw);
+    height: 100%;
+    margin-left: 14vw;
+}

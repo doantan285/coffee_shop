@@ -1,0 +1,36 @@
+.wrapper_account {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.form_account {
+    height: 100%;
+    padding: 36px 24px 0 24px;
+}
+.form_account-heading {
+    display: flex;
+    justify-content: space-between;   
+    margin-bottom: 33px;
+}
+
+.form_account-heading h1 {
+    color: var(--color-begie);
+}
+
+.form_account-heading a {
+    text-decoration: none;
+    background-color: brown;
+    color: aqua;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.form_account-body table {
+    width: 100%;
+    text-align: center;
+}
+
+.form_account-body th,
+.form_account-body td {
+    padding: 8px;
+}

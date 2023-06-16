@@ -1,0 +1,97 @@
+body {
+    background: rgb(37, 37, 37);
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-register {
+    max-width: 400px;
+    background: rgba(246, 154, 5, 0.6);
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+    border-radius: 5px;
+}
+
+.form-register .error-msg {
+    margin: 0 0 24px;
+    display: block;
+    background: crimson;
+    color: lightgoldenrodyellow;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+}
+
+.form-heading {
+    font-size: 36px;
+    color: #302f31;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    border-bottom: 1px solid #763176;
+    margin: 10px 0 16px;
+    display: flex;
+}
+
+select {
+    background: teal;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    padding: 8px;
+    cursor: pointer;
+    width: 265px;
+}
+
+.form-input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #f5f5f5;
+    flex-grow: 1;
+    margin-left: 8px;
+}
+
+.form-input::placeholder {
+    color: #763176;
+}
+
+.form-submit {
+    background: rgb(157, 113, 46);
+    border: none;
+    color: #302f31;
+    padding: 4px 6px;
+    width: 100%;
+    margin-top: 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 8px 0;
+    transition: 0.25s ease;
+}
+
+.form-submit:hover {
+    cursor: pointer;
+    background-color: rgb(170, 129, 67);
+    color: #000;
+}
+
+
+label {
+    color: #763176;
+    font-size: 22px;
+}
+
+p {
+    font-size: 14px;
+    color: #302f31;
+    text-align: center;
+    margin-top: 8px;
+}

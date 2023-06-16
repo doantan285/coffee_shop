@@ -1,0 +1,36 @@
+.wrapper-order {
+    height: 100%;
+    padding: 36px 24px 0 24px;
+    overflow-x: hidden;
+}
+
+.heading-order {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.body-order table {
+    text-align: center;
+}
+
+.body-order table th,
+.body-order table td {
+    padding: 8px 8px;
+}
+
+.wrapper-order .btn-confirm {
+    min-width: 90px;
+    height: 30px;
+    background: greenyellow;
+    cursor: pointer;
+}
+
+.wrapper-order .btn-confirm:hover {
+    background: green;
+}
+
+.wrapper-order .btn-done {
+    color: grey;
+    min-width: 90px;
+    height: 30px;
+}

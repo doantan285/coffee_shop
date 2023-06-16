@@ -1,0 +1,52 @@
+.wrapper-form_product {
+    height: 100%;
+    padding: 36px 24px 0 24px;
+    overflow-x: hidden;
+}
+
+.heading-form_product {
+    display: flex;
+    justify-content: space-between;   
+    margin-bottom: 32px;
+}
+
+.heading-form_product .search_field input {
+    padding: 12px;
+}
+
+.heading-form_product .btn-link_add {
+    text-decoration: none;
+    background-color: brown;
+    color: aqua;
+    padding: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.body-form_product table {
+    text-align: center;
+}
+
+.body-form_product table th,
+.body-form_product table td {
+    padding: 8px 8px;
+}
+
+.body-form_product .btn-custom {
+    color: blue;
+    width: 80px;
+    height: 28px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.body-form_product .btn-link_home {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.body-form_product .btn-link_home i {
+    margin-bottom: 20px;
+}
+

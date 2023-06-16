@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e6e8ea;
+}
+
+.container {
+    height: 100vh;
+    color: #46484a;
+}
+
+.wrapper-invoice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.invoice-header {
+    font-size: 24px;
+}
+
+.invoice-header i {
+    color: #7ab420;
+    
+}
+
+.invoice-body {
+    margin: 52px auto;
+    width: 524px;
+    font-size: 24px;
+}
+
+.invoice-body_top {
+    margin-bottom: 4px;
+}
+
+.invoice-body_bot {
+    border: 1px solid #b79c2d;
+}
+
+.invoice-body_text {
+    margin: 12px;
+}
+
+.invoice-body_text span {
+    color: rgb(129, 129, 129);
+}
+
+.invoice-footer {
+    display: flex;
+    width: 524px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.invoice-footer input {
+    padding: 5px;
+    border: none;
+    color: #fff;
+    background:rgb(129, 129, 129);
+    border-radius: 5px;
+    margin-top: -12px;
+    cursor: pointer;
+}
+
+.invoice-footer a input {
+    padding: 16px;
+    background: #2a9dcc;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
